@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false" />
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
 
-    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true" />
 
     <application
         android:name="com.tisenres.dragoncatch.app.DragonCatchApp"
@@ -34,7 +39,7 @@
         </activity>
         <meta-data
             android:name="com.google.ar.core"
-            android:value="optional" />
+            android:value="required" />
     </application>
 
 </manifest>
